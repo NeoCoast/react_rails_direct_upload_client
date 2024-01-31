@@ -1,0 +1,11 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: calc(100dvh - 4rem);
+
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
+}

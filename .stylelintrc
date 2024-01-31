@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-alphabetical-order": true,
+    "import-notation": null,
+    "scss/no-global-function-names": null,
+    "keyframes-name-pattern": null,
+    "selector-class-pattern": null,
+    "media-query-no-invalid": null
+  }
+}

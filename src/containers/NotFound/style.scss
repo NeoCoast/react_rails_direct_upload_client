@@ -1,0 +1,18 @@
+.not-found {
+  align-items: center;
+  color: $white-dark-hover;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+
+  &__error {
+    font-size: 8rem;
+    margin: -2rem 0;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+}

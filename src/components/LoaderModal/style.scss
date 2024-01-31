@@ -1,0 +1,88 @@
+.loader-modal {
+  align-items: center;
+  display: flex;
+  font-family: $font;
+  height: 100dvh;
+  justify-content: center;
+  width: 100vw;
+
+  @media (max-width: $phone) {
+    width: auto;
+  }
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+
+    @media (max-width: $tablet) {
+      background-color: $white-normal;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px 10px $box-shadow-color-10;
+      padding: 1rem 1.5rem 2rem;
+    }
+
+    &-body {
+      align-items: center;
+      color: $sky-blue-normal;
+      display: flex;
+      filter: drop-shadow(2px 5px 4px $sky-blue-normal-hover);
+      flex-direction: column;
+      gap: 0.5rem;
+      justify-content: center;
+      max-width: 14rem;
+      padding: 1.5rem 2.8rem 1rem;
+      text-align: center;
+
+      @media (max-width: $tablet) {
+        filter: none;
+      }
+    }
+
+    &-title {
+      font-size: 1rem;
+    }
+
+    &-subtitle {
+      font-size: 0.75rem;
+      padding-top: 0.2rem;
+    }
+
+    &-progress {
+      &-wrapper {
+        background-color: $white-normal-hover;
+        border-radius: 20px;
+        box-sizing: border-box;
+        height: 2rem;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+      &-bar {
+        background-color: $sky-blue-normal;
+        flex: 1 1 0%;
+        height: 100%;
+        transform: translateX(-100%);
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ReactModal {
+  &__Overlay {
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+
+    &--after-open {
+      opacity: 1;
+    }
+
+    &--before-close {
+      opacity: 0;
+    }
+  }
+}

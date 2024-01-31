@@ -1,0 +1,17 @@
+.media {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+
+  &__image {
+    display: none;
+
+    &--loaded {
+      display: block;
+    }
+  }
+
+  &__video {
+    object-fit: contain;
+  }
+}

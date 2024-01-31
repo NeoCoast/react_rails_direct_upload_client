@@ -1,0 +1,33 @@
+.create-post {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: calc(100dvh - 4rem);
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &-link {
+      width: fit-content;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+
+    &-files {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      width: 70%;
+    }
+  }
+}
